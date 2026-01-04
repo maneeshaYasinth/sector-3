@@ -2,6 +2,7 @@ import { useState } from "react";
 import { login } from "../services/authService";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import GoogleLoginButton from "../components/GoogleLoginButton";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -49,6 +50,17 @@ function Login() {
         >
           Login
         </button>
+        
+        <div className="my-4 flex items-center">
+          <hr className="flex-grow border-gray-400" />
+          <span className="px-3 text-white text-sm">OR</span>
+          <hr className="flex-grow border-gray-400" />
+        </div>
+        
+        <div className="flex justify-center">
+          <GoogleLoginButton />
+        </div>
+        
         <p className="text-sm text-center mt-4 text-white">
           Don't have an account?{" "}
           <Link to="/register" className="text-red-300 hover:underline">
