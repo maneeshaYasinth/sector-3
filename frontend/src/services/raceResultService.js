@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./authService";
 
-const API_URL = "http://localhost:5000/api/results";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/results`;
 
 /**
  * Fetch race results for a given season and round.

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/scores/manual";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/scores/manual`;
 
 // Submit a race result manuely
 export const submitResult = async (season, round, qualifyingWinner, raceTopThree) => {

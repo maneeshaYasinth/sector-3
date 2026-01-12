@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./authService";
 
-const API_URL = "http://localhost:5000/api/teamradio";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/teamradio`;
 
 /**
  * Fetch team radio for a given driber number.

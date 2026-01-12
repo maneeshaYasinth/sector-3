@@ -1,7 +1,5 @@
 import api from './api';
 
-const API_URL = "http://localhost:5000/api/driverstandings";
-
 /**
  * Fetch driver standings for a specific season.
  * @param {string} season

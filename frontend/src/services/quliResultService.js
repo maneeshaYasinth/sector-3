@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./authService";
 
-const QUALI_API_URL = "http://localhost:5000/api/qualiresults";
+const QUALI_API_URL = `${import.meta.env.VITE_API_BASE_URL}/qualiresults`;
 
 /**
  * Fetch qualifying results for a given season and round
