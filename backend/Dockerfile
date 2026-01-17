@@ -11,10 +11,10 @@ WORKDIR /app
 COPY . .
 
 #install the dependencies
-RUN npm instal
+RUN npm install
 
 #expose the port
 EXPOSE 5000
 
 #start the application
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
