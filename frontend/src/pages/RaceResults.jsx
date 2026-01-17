@@ -76,8 +76,8 @@ export default function RaceResults() {
       </div>
 
       {/* Results Table */}
-      <div className="w-11/12 md:w-4/5 overflow-hidden rounded-xl bg-white/10 backdrop-blur-md border border-red-600 shadow-lg">
-        <table className="w-full text-center">
+      <div className="w-11/12 md:w-4/5 overflow-x-auto rounded-xl bg-white/10 backdrop-blur-md border border-red-600 shadow-lg">
+        <table className="w-full text-center min-w-max md:min-w-full">
           <thead>
             <tr className="bg-red-700/30 backdrop-blur-md">
               <th className="p-3">Position</th>
